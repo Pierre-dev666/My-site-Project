@@ -93,6 +93,7 @@ h2 {
     top: 205px;
     text-align: center;
     z-index: 3;
+    list-style-type: none;
 }
 
 #id_link_2 {
@@ -102,6 +103,7 @@ h2 {
     top: 205px;
     text-align: center;
     z-index: 2;
+    list-style-type: none;
 }
 
 #id_link_3 {
@@ -111,6 +113,8 @@ h2 {
     top: 205px;
     text-align: center;
     z-index: 1;
+    list-style-type: none;
+
 }
 
 body {
@@ -142,7 +146,7 @@ a {
     background-color: rgb(136, 68, 204);
     border-radius: 5px;
     color: rgb(255, 255, 255);
-    text-decoration: none;
+    text-decoration: underline;
 
 }
 
