@@ -24,7 +24,7 @@ h2 {
     position: fixed;
     left: 0;
     top: 0;
-    padding: 0px 15px;
+    padding-left: 380px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     text-decoration: underline;
@@ -39,7 +39,7 @@ h2 {
 .style5 {
     z-index: 5;
     position: fixed;
-    left: 38.5%;
+    left: 37%;
     top: 0px;
     padding: 0px 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -58,15 +58,7 @@ h2 {
 
 }
 
-.class_emplacement_1 {
-    display: inline;
-    vertical-align: middle;
 
-}
-
-#id_emplacement_1 {
-    padding-left: 60px;
-}
 
 
 
@@ -84,37 +76,6 @@ h2 {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
-}
-
-#id_link_1 {
-    position: absolute;
-    width: 290px;
-    padding-left: 53px;
-    top: 205px;
-    text-align: center;
-    z-index: 3;
-    list-style-type: none;
-}
-
-#id_link_2 {
-    position: absolute;
-    width: 290px;
-    padding-left: 416px;
-    top: 205px;
-    text-align: center;
-    z-index: 2;
-    list-style-type: none;
-}
-
-#id_link_3 {
-    position: absolute;
-    width: 290px;
-    padding-left: 781px;
-    top: 205px;
-    text-align: center;
-    z-index: 1;
-    list-style-type: none;
-
 }
 
 body {
