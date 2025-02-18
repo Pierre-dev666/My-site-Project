@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+
+<body>
+    <div id="center">
+
+        <header>
+
+            <section id="header">
+
+                <div id="id_emplacement_0">
+                    <img src="https://media.istockphoto.com/id/163196980/fr/photo/panorama-du-coucher-du-soleil.jpg?s=612x612&w=0&k=20&c=xS8rD093Xox2WT0sm4ATLKQCDVAsTkRYNq1dpqKfAQo="
+                        alt="Une image" title="image de haut de page" id="id_image_du_haut_de_page">
+                    <h2 class="style_0">Haut de la page de Contact</h2>
+                    <h1 class="style5">Ma Page WEB</h1>
+                </div>
+            </section>
+
+
+            <nav>
+                <img src="../assets/img/freebar.png" alt="freebar1" class="class_emplacement_1" id="id_emplacement_1">
+                <img src="../assets/img/freebar.png" alt="freebar2" class="class_emplacement_1">
+                <img src="../assets/img/freebar.png" alt="freebar3" class="class_emplacement_1">
+                <ul>
+
+                    <li id="id_link_1"><a href="../index.html" class="link_1_1"><strong>Lien vers la page
+                                d'Accueil</strong></a></li>
+                    <li id="id_link_2"><a href="#" class="link_1_1"><strong>Lien vers la page 2</strong></a>
+                    </li>
+                    <li id="id_link_3"><a href="#" class="link_1_1"><strong>Lien vers
+                                3</strong></a></li>
+
+                </ul>
+
+            </nav>
+
+
+        </header>
+
+        <main>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <!--Début du Tableau 1-->
+                    <legend>Informations personelles</legend>
+                    <label for="miss">Mlle</label>
+                    <input type="radio" name="choice" id="miss" value="miss" class="accent" checked>
+
+                    <label for="mrs">Mme</label>
+                    <input type="radio" name="choice" id="mrs" value="mrs" class="accent">
+
+                    <label for="sir">M.</label>
+                    <input type="radio" name="choice" id="sir" value="sir" class="accent">
+
+
+
+                    <div>Prénom <input type="text" placeholder="Votre prénom" id="firstname">
+                        <label for="firstname"></label>
+                    </div>
+
+
+                    <div>Nom* <input type="text" placeholder="Votre nom" id="name" required>
+                        <label for="name"></label>
+                    </div>
+
+
+
+                    <div>Email* <input type="text" placeholder="Votre adresse mail" id="mail" required>
+                        <label for="mail"></label>
+                    </div>
+
+
+                </fieldset>
+                <!--Fin du Tableau 1-->
+
+                <fieldset>
+                    <!--Début du Tableau 2-->
+                    <legend>Votre message</legend>
+                    <div><label for="recipient">Destinataire</label>
+                        <select name="recipient" id="recipient">
+                            <option value selected>Général</option>
+                            <option value="accounting">Comptabilité</option>
+                            <option value="after-sales service">SAV</option>
+                            <option value="customerservice">Service client</option>
+                        </select>
+                    </div>
+
+
+                    <div>Sujet* <input type="text" placeholder="L'objet de votre message" id="messageobject" required>
+                        <label for="messageobject"></label>
+                    </div>
+
+
+                    <span>Message*</span> <textarea name="about" id="about" cols="60" rows="10"
+                        placeholder="Saisissez votre message ici" required></textarea>
+
+                    Ajouter une pièce jointe
+                    <input type="file" id="browse">
+                    <label for="browse"></label>
+
+                </fieldset>
+                <!--Fin du Tableau 2-->
+
+
+                <fieldset>
+                    <!--Début du Tableau 3-->
+                    <legend>Options</legend>
+
+                    <input type="checkbox" name="receive_a_copy_of_the_message" id="receive_a_copy_of_the_message"
+                        value="receive_a_copy_of_the_message">
+                    <label for="receive_a_copy_of_the_message">Recevoir une copie du message</label>
+                    <br>
+                    <input type="checkbox" name="receive_our_offers" id="receive_our_offers" value="receive_our_offers">
+                    <label for="receive_our_offers">Recevoir nos offres</label>
+
+                    <hr>
+                    Etre contacté par un conseillé
+                    <input type="radio" name="contact-choice" id="no" value="no" class="accent">
+                    <label for="no">Non</label>
+
+                    <input type="radio" name="contact-choice" id="by-tel" value="by-tel" class="accent">
+                    <label for="by-tel">Par téléphone</label>
+
+                    <input type="radio" name="contact-choice" id="by-mail" value="by-mail" class="accent" checked>
+                    <label for="by-mail">Par Email</label>
+
+                </fieldset>
+                <!--Fin du Tableau 3-->
+
+                <small>* : champs obligatoire</small><br>
+                <section id="button">
+                    <input type="submit" value="Valider" id="validate">
+                    <label for="validate"></label>
+
+                    <input type="reset" value="Effacer" id="erase">
+                    <label for="erase"></label>
+                </section>
+            </form>
+
+
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
