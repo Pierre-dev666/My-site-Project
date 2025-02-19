@@ -51,7 +51,7 @@ h2 {
     color: #f11b1b;
     text-shadow: 2px 0 10px blue;
     border-width: 2px;
-    border-style: double;
+    border-style: solid;
     border-color: red yellow;
     border-radius: 10px;
     box-shadow: 0 15px 30px red, 0 -15px 30px red, 20px 0 30px yellow, -20px 0 30px yellow;
@@ -59,7 +59,9 @@ h2 {
 }
 
 
-
+#grid {
+    margin-bottom: 20px;
+}
 
 
 .link_1_1 {
@@ -77,7 +79,59 @@ h2 {
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
+#with-grid_other-pages {
+    display: grid;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    grid-template-columns: repeat(8, 140px);
+    grid-template-rows: 150px;
+    gap: 10px;
+}
 
+#bloc-1_other-pages {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    justify-content: space-around;
+    background-image: url(../img/cadre-site-content-2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+    background-position: top left;
+    align-items: center;
+    margin-top: initial;
+}
+
+#bloc-2_other-pages {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    grid-column: 4 / span 5;
+    grid-row: 1;
+    justify-content: space-around;
+    background-image: url(../img/cadre-site-content-2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+    background-position: top left;
+    align-items: center;
+    margin-top: initial;
+}
+
+#bloc-3_other-pages {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    grid-column: 6 / span 7;
+    grid-row: 1;
+    justify-content: space-around;
+    background-image: url(../img/cadre-site-content-2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+    background-position: top left;
+    align-items: center;
+    margin-top: initial;
+}
 body {
     height: 100%;
     width: 100%;
@@ -99,18 +153,9 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
-
 a {
-
-    padding: 15px 10px;
-    font-size: 20px;
-    background-color: rgb(136, 68, 204);
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-
+    color: rgb(0, 4, 247);
 }
-
 a:hover {
     color: rgb(255, 250, 124);
 }

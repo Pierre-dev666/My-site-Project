@@ -2,12 +2,6 @@ body {
     margin-top: 10px;
 }
 
-#grid {
-    margin-bottom: 20px;
-}
-
-
-
 #with-grid {
     display: grid;
     margin-left: 0px;
@@ -63,7 +57,7 @@ body {
 }
 
 #bloc-4_homepage {
-    display: flex;
+    display: grid;
     width: 300px;
     height: 450px;
     grid-column: 7 / span 8;
@@ -75,6 +69,92 @@ body {
     background-position: top left;
     align-items: center;
     margin-top: initial;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 20px;
+
+}
+
+#title-log-in {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+}
+
+h3 {
+    width: 135px;
+    height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-decoration: underline;
+    font-style: normal;
+    text-transform: none;
+    font-size: 1.2em;
+    color: #f11b1b;
+    text-shadow: 2px 0 10px #f11b1b;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red yellow;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px red, 0 -5px 10px red, 5px 0 10px yellow, -5px 0 10px yellow;
+    text-align: center;
+}
+
+#username-bloc {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    text-align: center;
+    margin-left: 78px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-decoration: underline;
+    color: #f11b1b;
+    text-shadow: 2px 0 10px #f11b1b;
+}
+
+#username {
+    width: 140px;
+    height: 20px;
+}
+
+#password-bloc {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    text-align: center;
+    margin-left: 78px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-decoration: underline;
+    color: #f11b1b;
+    text-shadow: 2px 0 10px #f11b1b;
+}
+
+#pass {
+    width: 140px;
+    height: 20px;
+}
+
+#submit-bloc {
+    grid-column: 2 / span 3;
+    grid-row: 5;
+    margin-left: 20px;
+}
+
+#submit {
+    width: 100px;
+    height: 28px;
+    border-radius: 10%;
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-decoration: underline;
+    color: #f11b1b;
+    text-shadow: 2px 0 10px #f11b1b;
+}
+
+#create-account {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    margin-left: 70px;
 }
 
 #bloc-5_homepage {
@@ -89,6 +169,7 @@ body {
     background-size: 900px 1050px;
     background-position: top left;
     align-items: center;
+    align-self: center;
     margin-top: initial;
 }
 

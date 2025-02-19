@@ -36,28 +36,40 @@
             <section id="grid">
                 <figure id="with-grid">
 
-                    <div id="bloc-1_homepage" ><a href="#" class="link_1_1"><strong>Boutique</strong></a></div>
+                    <div id="bloc-1_homepage"><a href="#" class="link_1_1"><strong>Boutique</strong></a></div>
 
-                    <div id="bloc-2_homepage" ><a href="./pages/contact.html" class="link_1_1"><strong>Lien vers
-                        Contact</strong></a></div>
+                    <div id="bloc-2_homepage"><a href="./pages/contact.html" class="link_1_1"><strong>Lien vers
+                                Contact</strong></a></div>
 
-                    <div id="bloc-3_homepage" ><a href="#" class="link_1_1"><strong>A propos de nous</strong></a></div>
+                    <div id="bloc-3_homepage"><a href="#" class="link_1_1"><strong>A propos de nous</strong></a></div>
 
-                    <div id="bloc-4_homepage" ><div>
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" />
-                      </div>
-                      
-                      <div>
-                        <label for="pass">Password (8 characters minimum):</label>
-                        <input type="password" id="pass" name="password" minlength="8" required />
-                      </div>
-                      
-                      <input type="submit" value="Sign in" /></div>
-                      
-                    <div id="bloc-5_homepage" ><p>Présentation</p></div>
+                    <form action="#" method="post" id="bloc-4_homepage">
+                        <span id="title-log-in">
+                            <h3>Se connecter</h3>
+                        </span>
 
-                    <div id="bloc-6_homepage" >Infos récentes</div>
+                        <span id="username-bloc">
+                            <label for="username">Identifiant :</label>
+                            <input type="text" id="username" name="username" required />
+                        </span>
+
+                        <span id="password-bloc">
+                            <label for="pass">Mot de passe <br> (7 charact min) :</label>
+                            <input type="password" id="pass" name="password" minlength="7" required />
+                        </span>
+                        <span id="submit-bloc">
+                            <input type="submit" id="submit" value="Se connecter" />
+                        </span>
+
+                        <span id="create-account">
+                            <a href="#">Créer un nouveau compte</a>
+                        </span>
+                    </form>
+                    <div id="bloc-5_homepage">
+                        <p>Présentation</p>
+                    </div>
+
+                    <div id="bloc-6_homepage">Infos récentes</div>
 
                 </figure>
             </section>
