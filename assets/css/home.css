@@ -78,9 +78,6 @@ body {
 #title-log-in {
     grid-column: 2 / span 3;
     grid-row: 2;
-}
-
-h3 {
     width: 135px;
     height: 25px;
     font-family: 'Times New Roman', Times, serif;
