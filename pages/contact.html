@@ -44,15 +44,14 @@
                 <fieldset>
                     <!--Début du Tableau 1-->
                     <legend>Informations personelles</legend>
+                    <label for="sir">M.</label>
+                    <input type="radio" name="choice" id="sir" value="sir" class="accent" checked>
+ 
                     <label for="miss">Mlle</label>
-                    <input type="radio" name="choice" id="miss" value="miss" class="accent" checked>
+                    <input type="radio" name="choice" id="miss" value="miss" class="accent">
 
                     <label for="mrs">Mme</label>
                     <input type="radio" name="choice" id="mrs" value="mrs" class="accent">
-
-                    <label for="sir">M.</label>
-                    <input type="radio" name="choice" id="sir" value="sir" class="accent">
-
 
 
                     <div>Prénom <input type="text" placeholder="Votre prénom" id="firstname">
@@ -115,22 +114,19 @@
                     <label for="receive_our_offers">Recevoir nos offres</label>
 
                     <hr>
-                    Etre contacté par un conseillé
-                    <input type="radio" name="contact-choice" id="no" value="no" class="accent">
-                    <label for="no">Non</label>
-
-                    <input type="radio" name="contact-choice" id="by-tel" value="by-tel" class="accent">
-                    <label for="by-tel">Par téléphone</label>
-
+                    Etre contacté
                     <input type="radio" name="contact-choice" id="by-mail" value="by-mail" class="accent" checked>
                     <label for="by-mail">Par Email</label>
+ 
+                    <input type="radio" name="contact-choice" id="no" value="no" class="accent">
+                    <label for="no">Non</label>
 
                 </fieldset>
                 <!--Fin du Tableau 3-->
 
                 <small>* : champs obligatoire</small><br>
                 <section id="button">
-                    <input type="submit" value="Valider" id="validate">
+                    <input type="submit" value="Envoyer" id="validate">
                     <label for="validate"></label>
 
                     <input type="reset" value="Effacer" id="erase">
