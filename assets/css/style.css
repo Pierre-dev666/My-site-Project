@@ -79,6 +79,7 @@ h2 {
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
+
 #with-grid_other-pages {
     display: grid;
     margin-left: 0px;
@@ -132,6 +133,7 @@ h2 {
     align-items: center;
     margin-top: initial;
 }
+
 body {
     height: 100%;
     width: 100%;
@@ -153,9 +155,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
+
 a {
     color: rgb(0, 4, 247);
 }
+
 a:hover {
     color: rgb(255, 250, 124);
 }
