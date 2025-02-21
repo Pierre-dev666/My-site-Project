@@ -1,10 +1,10 @@
 main {
     margin-left: 200px;
     margin-right: 200px;
-    border: 2px solid rgb(136, 68, 204);
+    border: 2px solid rgb(21, 5, 248);
     border-radius: 3px;
-    box-shadow: 3px 3px 3px rgba(136, 68, 204, 0.514);
-    color: rgb(136, 68, 204);
+    box-shadow: 3px 3px 3px rgba(21, 5, 248, 0.514);
+    color: rgb(21, 5, 248);
 }
 
 legend {
@@ -13,7 +13,7 @@ legend {
 }
 
 hr {
-    border-color: rgb(136, 68, 204);
+    border-color: rgb(21, 5, 248);
     width: 450px;
 }
 
@@ -23,9 +23,8 @@ main {
 
 fieldset {
     margin: 30px;
-    background-color: rgba(136, 68, 204, 0.233);
-    border: 2px solid rgb(136, 68, 204);
-    border-radius: 3px;
+    background-color: rgba(21, 5, 248, 0.212);
+    border: 2px solid rgb(21, 5, 248);
 }
 
 #button {
@@ -45,7 +44,7 @@ fieldset {
 
 input {
     padding: 8px;
-    border: 1px solid rgb(136, 68, 204);
+    border: 1px solid rgb(21, 5, 248);
     border-radius: 5px;
 }
 
@@ -80,9 +79,9 @@ span {
 }
 
 #about {
-    left: 350px;
-    width: 590px;
-    margin-left: 23px;
+
+    width: 591px;
+    margin-left: 27px;
 }
 
 
@@ -91,9 +90,9 @@ span {
     width: 120px;
     margin: 0.5rem;
     font-size: 20px;
-    background-color: rgb(136, 68, 204);
+    background-color: rgba(21, 5, 248, 0.541);
     border-radius: 5px;
-    border-color: rgb(136, 68, 204);
+    border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
@@ -116,9 +115,9 @@ span {
     width: 120px;
     margin: 0.5rem;
     font-size: 20px;
-    background-color: rgb(136, 68, 204);
+    background-color: rgba(21, 5, 248, 0.541);
     border-radius: 5px;
-    border-color: rgb(136, 68, 204);
+    border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 10px;
@@ -133,7 +132,7 @@ small {
 }
 
 .accent {
-    accent-color: rgb(136, 68, 204);
+    accent-color: rgb(21, 5, 248);
     width: 20px;
     margin-left: 0px;
 }

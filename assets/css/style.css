@@ -9,7 +9,8 @@ h2 {
 #id_emplacement_0 {
     position: relative;
     height: 160px;
-    width: 100%;
+    width: 1170px;
+    
 }
 
 #id_image_du_haut_de_page {
@@ -22,9 +23,8 @@ h2 {
 .style_0 {
     z-index: 5;
     position: fixed;
-    left: 0;
     top: 0;
-    padding-left: 380px;
+    padding-left: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     text-decoration: underline;
@@ -39,7 +39,7 @@ h2 {
 .style5 {
     z-index: 5;
     position: fixed;
-    left: 37%;
+    margin-left: 340px;
     top: 0px;
     padding: 0px 20px;
     font-family: 'Times New Roman', Times, serif;
