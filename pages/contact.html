@@ -10,140 +10,148 @@
 </head>
 
 <body>
-    <div id="center">
 
-        <header>
 
-            <section id="header">
+    <header>
 
-                <div id="id_emplacement_0">
-                    <img src="https://media.istockphoto.com/id/163196980/fr/photo/panorama-du-coucher-du-soleil.jpg?s=612x612&w=0&k=20&c=xS8rD093Xox2WT0sm4ATLKQCDVAsTkRYNq1dpqKfAQo="
-                        alt="Une image" title="image de haut de page" id="id_image_du_haut_de_page">
-                    <h1 class="style5">Gaming site project</h1>
-                    <h2 class="style_0">Contact</h2>
+        <section id="grid">
+            <figure id="with-grid_all-pages">
+
+                <div id="bloc-1_all-pages"><a href="../pages/about.html" class="link_1_2">
+                        <img src="../assets/img/game-project-studio_logo.png" alt="Logo GSP"
+                            id="game-project-studio_logo"></a>
                 </div>
+                <div id="bloc-2_all-pages"><a href="../index.html"><img src="../assets/img/gaming-site-project_logo.PNG"
+                            alt="Logo GSP" class="logo_return-home-and-select-language"></a>
+                </div>
+                <div id="bloc-3_all-pages"><a href="../pages/about-the-game.html"
+                        class="link_1_1"><strong>Jeu</strong></a>
+                </div>
+                <div id="bloc-4_all-pages"><a href="../pages/news.html" class="link_1_1"><strong>Actualités</strong></a>
+                </div>
+                <div id="bloc-5_all-pages"><a href="../pages/shop.html" class="link_1_1"><strong>Boutique</strong></a>
+                </div>
+
+                <div id="bloc-6_all-pages"><a href="../pages/contact.html" class="link_1_1"><strong>Contact</strong></a>
+                </div>
+
+                <div id="bloc-7_all-pages"><a href="#"><img src="../assets/img/language-icon.png"
+                            alt="Logo: choix de la langue" class="logo_return-home-and-select-language"></a>
+                </div>
+
+                <div id="bloc-8_all-pages"><a href="#" class="link_1_1"><strong>Se connecter</strong></a>
+                </div>
+                <div id="bloc-9_all-pages"><a href="#" class="link_1_3"><strong>JOUER</strong></a>
+                </div>
+            </figure>
+        </section>
+
+    </header>
+
+    <main id="center">
+
+        <form action="#" method="post">
+            <fieldset>
+                <!--Début du Tableau 1-->
+                <legend>Informations personelles</legend>
+                <label for="sir">M.</label>
+                <input type="radio" name="choice" id="sir" value="sir" class="accent" checked>
+
+                <label for="miss">Mlle</label>
+                <input type="radio" name="choice" id="miss" value="miss" class="accent">
+
+                <label for="mrs">Mme</label>
+                <input type="radio" name="choice" id="mrs" value="mrs" class="accent">
+
+
+                <div>Prénom <input type="text" placeholder="Votre prénom" id="firstname">
+                    <label for="firstname"></label>
+                </div>
+
+
+                <div>Nom* <input type="text" placeholder="Votre nom" id="name" required>
+                    <label for="name"></label>
+                </div>
+
+
+
+                <div>Email* <input type="text" placeholder="Votre adresse mail" id="mail" required>
+                    <label for="mail"></label>
+                </div>
+
+
+            </fieldset>
+            <!--Fin du Tableau 1-->
+
+            <fieldset>
+                <!--Début du Tableau 2-->
+                <legend>Votre message</legend>
+                <div><label for="recipient">Destinataire</label>
+                    <select name="recipient" id="recipient">
+                        <option value selected>Général</option>
+                        <option value="accounting">Comptabilité</option>
+                        <option value="after-sales service">SAV</option>
+                        <option value="customerservice">Service client</option>
+                    </select>
+                </div>
+
+
+                <div>Sujet* <input type="text" placeholder="L'objet de votre message" id="messageobject" required>
+                    <label for="messageobject"></label>
+                </div>
+
+
+                <span>Message*</span> <textarea name="about" id="about" cols="60" rows="10"
+                    placeholder="Saisissez votre message ici" required></textarea>
+                <br>
+                Ajouter une pièce jointe
+                <input type="file" id="browse">
+                <label for="browse"></label>
+
+            </fieldset>
+            <!--Fin du Tableau 2-->
+
+
+            <fieldset>
+                <!--Début du Tableau 3-->
+                <legend>Options</legend>
+
+                <input type="checkbox" name="receive_a_copy_of_the_message" id="receive_a_copy_of_the_message"
+                    value="receive_a_copy_of_the_message">
+                <label for="receive_a_copy_of_the_message">Recevoir une copie du message</label>
+                <br>
+                <input type="checkbox" name="receive_our_offers" id="receive_our_offers" value="receive_our_offers">
+                <label for="receive_our_offers">Recevoir nos offres</label>
+
+                <hr>
+                Etre contacté
+                <input type="radio" name="contact-choice" id="by-mail" value="by-mail" class="accent" checked>
+                <label for="by-mail">Par Email</label>
+
+                <input type="radio" name="contact-choice" id="no" value="no" class="accent">
+                <label for="no">Non</label>
+
+            </fieldset>
+            <!--Fin du Tableau 3-->
+
+            <small>* : champs obligatoire</small><br>
+            <section id="button">
+                <input type="submit" value="Envoyer" id="validate">
+                <label for="validate"></label>
+
+                <input type="reset" value="Effacer" id="erase">
+                <label for="erase"></label>
             </section>
-
-            <section id="grid">
-                <figure id="with-grid_other-pages">
-
-                    <div id="bloc-1_other-pages"><a href="../index.html" class="link_1_1"><strong>Retour à la page
-                                d'Accueil</strong></a></div>
-
-                    <div id="bloc-2_other-pages"><a href="./shop.html" class="link_1_1"><strong>Boutique</strong></a>
-                    </div>
-
-                    <div id="bloc-3_other-pages"><a href="./about.html" class="link_1_1"><strong>A propos de
-                                nous</strong></a></div>
-                </figure>
-            </section>
-
-
-        </header>
-
-        <main>
-
-            <form action="#" method="post">
-                <fieldset>
-                    <!--Début du Tableau 1-->
-                    <legend>Informations personelles</legend>
-                    <label for="sir">M.</label>
-                    <input type="radio" name="choice" id="sir" value="sir" class="accent" checked>
-
-                    <label for="miss">Mlle</label>
-                    <input type="radio" name="choice" id="miss" value="miss" class="accent">
-
-                    <label for="mrs">Mme</label>
-                    <input type="radio" name="choice" id="mrs" value="mrs" class="accent">
-
-
-                    <div>Prénom <input type="text" placeholder="Votre prénom" id="firstname">
-                        <label for="firstname"></label>
-                    </div>
-
-
-                    <div>Nom* <input type="text" placeholder="Votre nom" id="name" required>
-                        <label for="name"></label>
-                    </div>
+        </form>
 
 
 
-                    <div>Email* <input type="text" placeholder="Votre adresse mail" id="mail" required>
-                        <label for="mail"></label>
-                    </div>
+    </main>
 
+    <footer>
 
-                </fieldset>
-                <!--Fin du Tableau 1-->
+    </footer>
 
-                <fieldset>
-                    <!--Début du Tableau 2-->
-                    <legend>Votre message</legend>
-                    <div><label for="recipient">Destinataire</label>
-                        <select name="recipient" id="recipient">
-                            <option value selected>Général</option>
-                            <option value="accounting">Comptabilité</option>
-                            <option value="after-sales service">SAV</option>
-                            <option value="customerservice">Service client</option>
-                        </select>
-                    </div>
-
-
-                    <div>Sujet* <input type="text" placeholder="L'objet de votre message" id="messageobject" required>
-                        <label for="messageobject"></label>
-                    </div>
-
-
-                    <span>Message*</span> <textarea name="about" id="about" cols="60" rows="10"
-                        placeholder="Saisissez votre message ici" required></textarea>
-
-                    Ajouter une pièce jointe
-                    <input type="file" id="browse">
-                    <label for="browse"></label>
-
-                </fieldset>
-                <!--Fin du Tableau 2-->
-
-
-                <fieldset>
-                    <!--Début du Tableau 3-->
-                    <legend>Options</legend>
-
-                    <input type="checkbox" name="receive_a_copy_of_the_message" id="receive_a_copy_of_the_message"
-                        value="receive_a_copy_of_the_message">
-                    <label for="receive_a_copy_of_the_message">Recevoir une copie du message</label>
-                    <br>
-                    <input type="checkbox" name="receive_our_offers" id="receive_our_offers" value="receive_our_offers">
-                    <label for="receive_our_offers">Recevoir nos offres</label>
-
-                    <hr>
-                    Etre contacté
-                    <input type="radio" name="contact-choice" id="by-mail" value="by-mail" class="accent" checked>
-                    <label for="by-mail">Par Email</label>
-
-                    <input type="radio" name="contact-choice" id="no" value="no" class="accent">
-                    <label for="no">Non</label>
-
-                </fieldset>
-                <!--Fin du Tableau 3-->
-
-                <small>* : champs obligatoire</small><br>
-                <section id="button">
-                    <input type="submit" value="Envoyer" id="validate">
-                    <label for="validate"></label>
-
-                    <input type="reset" value="Effacer" id="erase">
-                    <label for="erase"></label>
-                </section>
-            </form>
-
-
-
-        </main>
-        <footer>
-
-        </footer>
-    </div>
 </body>
 
 </html>

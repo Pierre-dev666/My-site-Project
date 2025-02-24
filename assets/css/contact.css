@@ -53,7 +53,7 @@ input {
 div input {
 
     left: 590px;
-    width: 580px;
+    width: 400px;
 
 }
 
@@ -80,7 +80,8 @@ span {
 
 #about {
 
-    width: 591px;
+    width: 600px;
+    height: 165px;
     margin-left: 27px;
 }
 
@@ -107,7 +108,7 @@ span {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
-    width: 484px;
+    width: 495px;
 }
 
 #erase {
