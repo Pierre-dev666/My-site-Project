@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos de nous - Game Project</title>
+    <title>Se connecter - Game Project</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/log-in.css">
 </head>
 
 <body>
@@ -50,11 +50,33 @@
 
     </header>
 
-    <main id="center-about">
-        <section id="border-and-background">
-            <p class="titre">Game project Studio</p>
-            <hr>
-            <p>Tout savoir sur notre studio</p>
+    <main id="log-in-form-center">
+        <section id="grid_log-in">
+            <figure id="with-grid">
+                <form action="#" method="post" id="bloc-1_log-in">
+                    <span id="title-log-in">Se connecter au compte</span>
+
+                    <span id="username-bloc">
+                        <label for="username">Identifiant :</label>
+                        <input type="text" id="username" name="username" required>
+                    </span>
+
+                    <span id="password-bloc">
+                        <label for="pass">Mot de passe <br> (7 charact min) :</label>
+                        <input type="password" id="pass" name="password" minlength="7" required>
+                    </span>
+                    <span id="submit-bloc">
+                        <input type="submit" id="submit" value="Connexion">
+                    </span>
+
+                    <span id="create-account">
+                        <a href="#">Créer un nouveau compte</a>
+                    </span>
+                    <span id="unable-to-log-in">
+                        <a href="#">impossible de se connecter ?</a>
+                    </span>
+                </form>
+            </figure>
         </section>
     </main>
 

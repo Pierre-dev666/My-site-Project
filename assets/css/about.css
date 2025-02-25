@@ -1,0 +1,33 @@
+#center-about {
+
+    height: auto;
+    width: 1150px;
+    margin: auto;
+    margin-top: -15px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'lexend', Times, serif;
+
+}
+
+#border-and-background {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px aqua, 0 -2px 10px aqua, 2px 0 10px aqua, -2px 0 10px aqua;
+    text-align: center;
+}
+
+.titre {
+    /*rien pour le moment*/
+}
+
+hr {
+    border-color: aqua;
+    width: 1149px;
+    margin-left: -2px;
+}
+
+p {
+    color: aqua;
+}

@@ -7,12 +7,12 @@
 
 header {
     margin-bottom: 50px;
+    margin-top: -8px;
 }
 
 h2 {
     color: rgb(136, 68, 204);
 }
-
 
 .style_0 {
     position: fixed;
@@ -35,7 +35,7 @@ h2 {
     top: 5px;
     left: 20px;
     padding: 0px 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'lexend', Times, serif;
     font-weight: 900;
     text-decoration: none;
     font-style: normal;
@@ -46,8 +46,12 @@ h2 {
 }
 
 .logo_return-home-and-select-language {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
+}
+
+#language {
+    display: inline;
 }
 
 #game-project-studio_logo {
@@ -117,6 +121,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.95);
     background-size: 100% 150px;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 #bloc-1_all-pages {
@@ -221,12 +226,8 @@ h2 {
 body {
     height: 100%;
     width: 100%;
-    background-image: url(../img/gouttes-eau.png), url(../img/old-painted-textured-surface-backdrop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
-    background-attachment: fixed;
-    margin: 0px;
+    background: #000 !important;
+    scroll-behavior: smooth;
 
 }
 
@@ -237,16 +238,8 @@ body {
     margin: auto;
     margin-top: -15px;
     background-color: rgba(255, 255, 255, 0);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'lexend', Times, serif;
 
-}
-
-a {
-    color: rgb(0, 4, 247);
-}
-
-a:hover {
-    color: rgb(255, 250, 124);
 }
 
 div {

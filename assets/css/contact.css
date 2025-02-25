@@ -1,10 +1,20 @@
+#contact-form-center{
+    height: auto;
+    width: 800px;
+    margin: auto;
+    margin-top: -15px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+}
 main {
     margin-left: 200px;
     margin-right: 200px;
-    border: 2px solid rgb(21, 5, 248);
+    border: 2px solid aqua;
     border-radius: 3px;
-    box-shadow: 3px 3px 3px rgba(21, 5, 248, 0.514);
-    color: rgb(21, 5, 248);
+    box-shadow: 3px 3px 45px #00ffffc7;
+    color: aqua;
+    background-color: antiquewhite;
 }
 
 legend {
@@ -17,14 +27,10 @@ hr {
     width: 450px;
 }
 
-main {
-    background-color: antiquewhite;
-}
-
 fieldset {
     margin: 30px;
-    background-color: rgba(21, 5, 248, 0.212);
-    border: 2px solid rgb(21, 5, 248);
+    background-color: #00ffff4d;
+    border: 2px solid aqua;
 }
 
 #button {
@@ -44,7 +50,7 @@ fieldset {
 
 input {
     padding: 8px;
-    border: 1px solid rgb(21, 5, 248);
+    border: 1px solid aqua;
     border-radius: 5px;
 }
 
@@ -91,7 +97,7 @@ span {
     width: 120px;
     margin: 0.5rem;
     font-size: 20px;
-    background-color: rgba(21, 5, 248, 0.541);
+    background-color: aqua;
     border-radius: 5px;
     border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -116,7 +122,7 @@ span {
     width: 120px;
     margin: 0.5rem;
     font-size: 20px;
-    background-color: rgba(21, 5, 248, 0.541);
+    background-color: aqua;
     border-radius: 5px;
     border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
