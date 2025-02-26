@@ -45,73 +45,6 @@ h2 {
 
 }
 
-.logo_return-home-and-select-language {
-    height: 50px;
-    width: 50px;
-    vertical-align: middle;
-}
-
-#site-language {
-    display: inline;
-}
-.language-select{
-    width: 108px;
-    height: 150px;
-    display: block;
-    position: absolute;
-    padding-top: 150px;
-    margin-left: 2px;
-    visibility: hidden;  
-    
-}
-
-#language-choice-box{
-    display: grid
-    ;
-    height: 80px;
-    background-color: rgb(32, 32, 32);
-    margin-top: 50px;
-    text-align: center;
-    font-size: 17px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px black;
-    color: rgb(255, 255, 255);
-    font-family: 'lexend', Times, serif;
-    text-decoration: none;
-
-}
-
-#bloc-7_all-pages:hover .language-select{
-    visibility: visible;
-}
-.language-select:hover{
-    visibility: visible;
-}
-#language-1{
-    padding-top: 10px;
-
-}
-
-.language-decoration{
-    color: white;
-    text-decoration: none;
-}
-
-.language-decoration:hover{
-    color: aqua;
-    text-decoration: solid underline 4px;
-    text-decoration-color: aqua;
-    text-underline-offset: 10px;
-    cursor: pointer;
-}
-
-
-#game-project-studio_logo {
-    bottom: 0px;
-    height: 70px;
-    width: 220px;
-}
-
 #grid {
     position: relative;
     height: 80px;
@@ -135,7 +68,7 @@ h2 {
 .link_1_2 {
     display: inline-block;
     font-size: 17px;
-
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 .link_1_3 {
@@ -153,7 +86,7 @@ h2 {
 .link_1_1:hover {
     background-color: rgb(32, 32, 32);
     color: aqua;
-    text-decoration: solid underline 4px;
+    text-decoration: solid underline 3px;
     text-decoration-color: aqua;
     text-underline-offset: 10px;
     cursor: pointer;
@@ -189,6 +122,26 @@ h2 {
     margin-top: initial;
 }
 
+.link_1_2:hover {
+    border-bottom: 2px solid cyan;
+}
+
+#game-project-studio_logo {
+    bottom: 0px;
+    height: 70px;
+    width: 220px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-top: 1px;
+    margin-top: 6px;
+}
+#game-project-studio_logo:hover {
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 #bloc-2_all-pages {
     display: flex;
     width: 150px;
@@ -198,6 +151,24 @@ h2 {
     justify-content: space-around;
     align-items: center;
     margin-top: initial;
+}
+
+.logo_return-home {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.logo_return-home:hover {
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #bloc-3_all-pages {
@@ -253,6 +224,68 @@ h2 {
     justify-content: space-around;
     align-items: center;
     margin-top: initial;
+}
+
+.logo_select-language {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+#site-language {
+    display: inline;
+}
+
+.language-select {
+    width: 108px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    padding-top: 150px;
+    margin-left: 2px;
+    visibility: hidden;
+
+}
+
+#language-choice-box {
+    display: grid;
+    height: 80px;
+    background-color: rgb(32, 32, 32);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    color: rgb(255, 255, 255);
+    font-family: 'lexend', Times, serif;
+    text-decoration: none;
+
+}
+
+#bloc-7_all-pages:hover .language-select {
+    visibility: visible;
+}
+
+.language-select:hover {
+    visibility: visible;
+}
+
+#language-1 {
+    padding-top: 10px;
+
+}
+
+.language-decoration {
+    color: white;
+    text-decoration: none;
+}
+
+.language-decoration:hover {
+    color: aqua;
+    text-decoration: solid underline 4px;
+    text-decoration-color: aqua;
+    text-underline-offset: 10px;
+    cursor: pointer;
 }
 
 #bloc-8_all-pages {
