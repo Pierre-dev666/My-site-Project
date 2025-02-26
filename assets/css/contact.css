@@ -17,13 +17,24 @@ main {
     background-color: antiquewhite;
 }
 
+h1 {
+    margin: 70px 0px;
+    color: aqua;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: 'lexend', Times, serif;
+    cursor: default;
+}
+
 legend {
     padding-left: 20px;
     padding-right: 20px;
+    font-family: 'lexend', Times, serif;
 }
 
 hr {
-    border-color: rgb(21, 5, 248);
+    border-color: aqua;
     width: 450px;
 }
 
@@ -104,6 +115,8 @@ span {
     text-decoration: none;
     text-align: center;
     margin-left: 260px;
+    font-family: 'lexend', Times, serif;
+    color:black;
 }
 
 #validate:hover {
@@ -128,6 +141,8 @@ span {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 10px;
+    font-family: 'lexend', Times, serif;
+    color:black;
 }
 
 #erase:hover {

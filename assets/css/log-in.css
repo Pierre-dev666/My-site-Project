@@ -30,7 +30,7 @@
 
 }
 
-#title-log-in {
+h1 {
     grid-column: 1 / span 4;
     grid-row: 1;
     width: 305px;
@@ -60,10 +60,10 @@
     text-align: center;
     margin-left: 78px;
     font-family: 'lexend', Times, serif;
-    font-weight: 900;
+    font-weight: 500;
     text-decoration: underline;
     color: aqua;
-    text-shadow: 2px 0 10px aqua;
+    text-shadow: 2px 0 20px aqua;
 }
 
 #username {
@@ -78,10 +78,10 @@
     text-align: center;
     margin-left: 78px;
     font-family: 'lexend', Times, serif;
-    font-weight: 900;
+    font-weight: 500;
     text-decoration: underline;
     color: aqua;
-    text-shadow: 2px 0 10px aqua;
+    text-shadow: 2px 0 20px aqua;
     margin-top: 60px;
 }
 
@@ -105,7 +105,7 @@
     border-radius: 10%;
     background-color: black;
     font-family: 'lexend', Times, serif;
-    font-weight: 900;
+    font-weight: 500;
     text-decoration: underline;
     color: aqua;
     text-shadow: 2px 0 10px aqua;
@@ -114,6 +114,7 @@
 
 #submit:hover {
     background-color: rgb(32, 32, 32);
+    color: white;
 }
 
 #create-account {
@@ -135,5 +136,5 @@ a {
 }
 
 a:hover {
-    color: rgba(255, 255, 255, 0.815);
+    color: white;
 }

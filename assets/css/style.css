@@ -11,7 +11,7 @@ header {
 }
 
 h2 {
-    color: rgb(136, 68, 204);
+    color: aqua;
 }
 
 .style_0 {
@@ -48,13 +48,66 @@ h2 {
 .logo_return-home-and-select-language {
     height: 50px;
     width: 50px;
+    vertical-align: middle;
 }
 
-#language {
+#site-language {
     display: inline;
 }
+.language-select{
+    width: 108px;
+    height: 150px;
+    display: block;
+    position: absolute;
+    padding-top: 150px;
+    margin-left: 2px;
+    visibility: hidden;  
+    
+}
+
+#language-choice-box{
+    display: grid
+    ;
+    height: 80px;
+    background-color: rgb(32, 32, 32);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    color: rgb(255, 255, 255);
+    font-family: 'lexend', Times, serif;
+    text-decoration: none;
+
+}
+
+#bloc-7_all-pages:hover .language-select{
+    visibility: visible;
+}
+.language-select:hover{
+    visibility: visible;
+}
+#language-1{
+    padding-top: 10px;
+
+}
+
+.language-decoration{
+    color: white;
+    text-decoration: none;
+}
+
+.language-decoration:hover{
+    color: aqua;
+    text-decoration: solid underline 4px;
+    text-decoration-color: aqua;
+    text-underline-offset: 10px;
+    cursor: pointer;
+}
+
 
 #game-project-studio_logo {
+    bottom: 0px;
     height: 70px;
     width: 220px;
 }
@@ -76,6 +129,7 @@ h2 {
     color: rgb(255, 255, 255);
     font-family: 'lexend', Times, serif;
     text-decoration: none;
+    z-index: 1;
 }
 
 .link_1_2 {

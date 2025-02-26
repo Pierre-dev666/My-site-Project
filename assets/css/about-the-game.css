@@ -9,6 +9,12 @@
 
 }
 
+#Logo-header{
+    width: 180px;
+    height: 180px;
+    margin: 35px 485px;
+}
+
 #border-and-background {
     border-width: 2px;
     border-style: solid;
@@ -18,16 +24,16 @@
     text-align: center;
 }
 
-.titre {
-    /*rien pour le moment*/
-}
-
 hr {
     border-color: aqua;
     width: 1149px;
     margin-left: -2px;
 }
 
-p {
+h1{
+    color: aqua;
+}
+
+#border-and-background p {
     color: aqua;
 }

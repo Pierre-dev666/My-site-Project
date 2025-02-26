@@ -1,3 +1,13 @@
+h1 {
+    margin: 105px 0px;
+    color: aqua;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: 'lexend', Times, serif;
+    cursor: default;
+}
+
 #shop-flex-row {
     display: flex;
     flex-direction: row;
@@ -12,36 +22,39 @@
     width: 240px;
     height: 360px;
     object-fit: cover;
-    background-image: url(../img/cadre-1.png);
-    background-repeat: no-repeat;
-    background-size: 240px 360px;
-    background-position: top left;
+    border: 2px solid aqua;
+    box-shadow: 0 5px 10px aqua, 0 -5px 10px aqua, 5px 0 10px aqua, -5px 0 10px aqua;
+    border-radius: 5%;
     text-align: center;
     margin: 20px;
 }
 
 .shop-item-title {
     margin-top: 60px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'lexend', Times, serif;
     font-weight: 900;
     text-decoration: underline;
-    font-size: 1.2em;
-    background-color: beige;
-    color: #f11b1b;
-    text-shadow: 2px 0 10px #f11b1b;
+    font-size: x-large;
+    background-color: black;
+    color: aqua;
     border-width: 2px;
     border-style: solid;
-    border-color: red yellow;
+    border-color: aqua aqua;
     border-radius: 10px;
-    box-shadow: 0 5px 10px red, 0 -5px 10px red, 5px 0 10px yellow, -5px 0 10px yellow;
+    box-shadow: 0 5px 10px aqua, 0 -5px 10px aqua, 5px 0 10px aqua, -5px 0 10px aqua;
     text-align: center;
     width: 120px;
-    margin-left: 59px;
+    height: 35px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    cursor: default;
 }
 
 .shop-item-price {
     margin: 0px;
     font-size: x-large;
+    color: aqua;
+    cursor: default;
 }
 
 .shop-flex-figure img {
@@ -53,4 +66,5 @@
     width: 110px;
     height: 35px;
     border-radius: 25%;
+    cursor: pointer;
 }

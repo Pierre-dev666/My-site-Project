@@ -1,3 +1,13 @@
+h1 {
+    margin: 105px 0px;
+    color: aqua;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    font-family: 'lexend', Times, serif;
+    cursor: default;
+}
+
 #center-news {
 
     height: auto;
@@ -28,6 +38,6 @@ hr {
     margin-left: -2px;
 }
 
-p {
+#border-and-background p {
     color: aqua;
 }
