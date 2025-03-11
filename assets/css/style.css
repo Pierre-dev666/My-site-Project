@@ -69,7 +69,7 @@ h2 {
 .link_1_2 {
     display: inline-block;
     font-size: 17px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 
 .link_1_3 {
@@ -93,6 +93,10 @@ h2 {
     cursor: pointer;
 }
 
+.link_1_2:hover {
+    border-bottom: 3px solid cyan;
+}
+
 .link_1_3:hover {
     background-color: aqua;
     color: white;
@@ -103,7 +107,7 @@ h2 {
     display: grid;
     position: fixed;
     margin: 0px;
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px;
     gap: 7px;
     background-color: rgba(0, 0, 0, 0.95);
@@ -123,10 +127,6 @@ h2 {
     margin-top: initial;
 }
 
-.link_1_2:hover {
-    border-bottom: 2px solid cyan;
-}
-
 #game-project-studio_logo {
     bottom: 0px;
     height: 70px;
@@ -137,6 +137,7 @@ h2 {
     padding-top: 1px;
     margin-top: 6px;
 }
+
 #game-project-studio_logo:hover {
     background-color: rgb(32, 32, 32);
     border-radius: 10px;
@@ -220,7 +221,7 @@ h2 {
     display: flex;
     width: 150px;
     height: 80px;
-    grid-column: 11;
+    grid-column: 10;
     grid-row: 1;
     justify-content: space-around;
     align-items: center;
@@ -235,6 +236,7 @@ h2 {
 
 #site-language {
     display: inline;
+    margin-left: -5px;
 }
 
 .language-select {
@@ -293,18 +295,31 @@ h2 {
     display: flex;
     width: 150px;
     height: 80px;
-    grid-column: 12;
+    grid-column: 11;
     grid-row: 1;
     justify-content: space-around;
     align-items: center;
     margin-top: initial;
 }
 
+.logo_nav {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-self: center;
+}
+
+.nav_text {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 #bloc-9_all-pages {
     display: flex;
     width: 150px;
     height: 80px;
-    grid-column: 13;
+    grid-column: 12;
     grid-row: 1;
     justify-content: space-around;
     align-items: center;
