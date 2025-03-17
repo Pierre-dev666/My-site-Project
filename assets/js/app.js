@@ -32,3 +32,6 @@ console.log(notes);
 
 fruits.sort(comparedecroissant);
 console.log(fruits);
+
+let prenom = "pierre";
+console.log("bienvenue " + prenom);
