@@ -35,3 +35,9 @@ console.log(fruits);
 
 let prenom = "pierre";
 console.log("bienvenue " + prenom);
+
+/*créé un nombre aléatoire entre 0 et 20 (inférieur à 21*/
+function getRandomInt(max) {
+    return Math.floor(Math.random() * 21);
+  }
+  console.log(getRandomInt());
