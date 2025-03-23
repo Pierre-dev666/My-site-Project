@@ -251,10 +251,11 @@ h2 {
 }
 
 #language-choice-box {
-    display: grid;
-    height: 80px;
+    display: inline;
+    height: 30px;
     background-color: rgb(32, 32, 32);
-    margin-top: 50px;
+    margin-top: 42px;
+    padding-top: 6px;
     text-align: center;
     font-size: 17px;
     border-radius: 10px;
@@ -262,6 +263,7 @@ h2 {
     color: rgb(255, 255, 255);
     font-family: 'lexend', Times, serif;
     text-decoration: none;
+    position: absolute;
 
 }
 
@@ -281,13 +283,15 @@ h2 {
 .language-decoration {
     color: white;
     text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .language-decoration:hover {
     color: aqua;
     text-decoration: solid underline 4px;
     text-decoration-color: aqua;
-    text-underline-offset: 10px;
+    text-underline-offset: 12px;
     cursor: pointer;
 }
 

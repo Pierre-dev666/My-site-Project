@@ -8,7 +8,7 @@
     <meta name="description" content="La description de mon document">
     <link rel="icon" href="../../assets/img/gaming-site-project_logo.png" />
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/log-in.css">
+    <link rel="stylesheet" href="../../assets/css/play.css">
 </head>
 
 <body>
@@ -25,9 +25,9 @@
                 </div>
                 <div id="bloc-2_all-pages">
                     <a href="../../index.html" class="link_1_1"><img src="../../assets/img/gaming-site-project_logo.png"
-                        alt="Logo: Gaming Project" class="logo_nav">
-                    <p class="nav_text"><strong>Accueil</strong></p>
-                </a>
+                            alt="Logo: Gaming Project" class="logo_nav">
+                        <p class="nav_text"><strong>Accueil</strong></p>
+                    </a>
                 </div>
                 <div id="bloc-3_all-pages">
                     <a href="./about-the-game.html" class="link_1_1"><img src="../../assets/img/game-infos_icon.png"
@@ -82,14 +82,79 @@
 
     </header>
 
-    <main id="center">
+    <main id="play_center">
+        <section id="grid">
+            <section id="with-grid_play-menu">
+                <video id="background-menu" autoplay loop muted>
+
+                    <source src="../../assets/video/menu part 2.mp4" type="video/mp4">
+
+                </video>
+                <div id="bloc-1_menu">
+
+                    <a href="#" id="button_main-menu-play" value="Switch image" onClick="prepareAlternance()">
+                        <p>Jouer</p>
+                    </a>
+
+                </div>
+                <div id="bloc-2_menu">
+
+                    <a href="#" id="button_main-menu-settings">
+                        <p>Paramètres</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section id="with-grid_play-battle">
+
+                <div id="bloc-1_play">
+                    <div id="play_burger-menu-div">
+                        <ul class="menu">
+                            <li><a class="menuItem" href="#">Home</a></li>
+                            <li><a class="menuItem" href="#">Profile</a></li>
+                            <li><a class="menuItem" href="#">Paramètres</a></li>
+                            <li><a class="menuItem" id="exit">Quitter</a></li>
+                        </ul>
+                        <button class="hamburger">
+                            <img src="../../assets/img/burger_menu.png" alt="Logo: choix de la langue"
+                                class="play_burger-menu">
+                        </button>
+                    </div>
+                </div>
+                <div id="bloc-2_play">
+                    <img src="../../assets/img/guerrier-posture-attack.png" alt="Logo: Gaming Project" class="warrior">
+                    </a>
+                </div>
+                <div id="bloc-skill-1_play">
+                    <button class="link_1_1"><img src="../../assets/img/gaming-site-project_logo.png"
+                            alt="Logo: Gaming Project" class="logo_attack">
+
+                    </button>
+                </div>
+                <div id="bloc-skill-2_play">
+                    <button class="link_1_1"><img src="../../assets/img/gaming-site-project_logo.png"
+                            alt="Logo: Gaming Project" class="logo_attack"></button>
+                </div>
+                <div id="bloc-skill-3_play">
+                    <button class="link_1_1"><img src="../../assets/img/gaming-site-project_logo.png"
+                            alt="Logo: Gaming Project" class="logo_attack"></button>
+                </div>
+                <div id="bloc-skill-4_play">
+                    <button class="link_1_1"><img src="../../assets/img/gaming-site-project_logo.png"
+                            alt="Logo: Gaming Project" class="logo_attack"></button>
+                </div>
+
+            </section>
+        </section>
 
     </main>
 
     <footer>
 
     </footer>
-
+    <script src="../../assets/js/app.js"></script>
 </body>
 
 </html>
