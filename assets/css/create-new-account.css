@@ -66,7 +66,7 @@ h1 {
     text-shadow: 2px 0 20px aqua;
 }
 
-#username {
+#create-username {
     width: 140px;
     height: 20px;
     margin-top: 5px;
@@ -86,7 +86,7 @@ h1 {
     margin-top: 60px;
 }
 
-#pass {
+#create-password {
     width: 140px;
     height: 20px;
     margin-top: 5px;
@@ -100,7 +100,7 @@ h1 {
     margin-top: 80px;
 }
 
-#log-in_submit {
+#create-new-account_submit {
     width: 100px;
     height: 28px;
     border-color: cyan;
@@ -114,23 +114,9 @@ h1 {
     cursor: pointer;
 }
 
-#log-in_submit:hover {
+#create-new-account_submit:hover {
     background-color: rgb(32, 32, 32);
     color: white;
-}
-
-#create-account {
-    grid-column: 1 / span 4;
-    grid-row: 7;
-    margin-left: 70px;
-    margin-top: 15px;
-}
-
-#unable-to-log-in {
-    grid-column: 1 / span 4;
-    grid-row: 8;
-    margin-left: 60px;
-    margin-bottom: 40px;
 }
 
 a {
