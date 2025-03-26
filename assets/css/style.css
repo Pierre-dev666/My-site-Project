@@ -103,6 +103,14 @@ h2 {
     cursor: pointer;
 }
 
+#not-connected {
+    display: grid;
+}
+
+#connected {
+    display: none;
+}
+
 #with-grid_all-pages {
     display: grid;
     position: fixed;
@@ -281,6 +289,7 @@ h2 {
 }
 
 .language-decoration {
+    font-size: smaller;
     color: white;
     text-decoration: none;
     margin-right: 5px;
@@ -289,10 +298,48 @@ h2 {
 
 .language-decoration:hover {
     color: aqua;
-    text-decoration: solid underline 4px;
+    text-decoration: solid underline 3px;
     text-decoration-color: aqua;
-    text-underline-offset: 12px;
+    text-underline-offset: 10px;
     cursor: pointer;
+}
+
+#deconnexion {
+
+    width: 108px;
+    height: 150px;
+    position: absolute;
+    padding-top: 150px;
+    margin-left: 2px;
+    visibility: hidden;
+    display: none;
+
+}
+
+#deconnexion-box {
+    display: inline;
+    height: 26px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    margin-top: 48px;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    color: rgb(255, 255, 255);
+    font-family: 'lexend', Times, serif;
+    text-decoration: none;
+    position: absolute;
+
+}
+
+#bloc-8_all-pages:hover #deconnexion {
+    visibility: visible;
+}
+
+#deconnexion:hover {
+    visibility: visible;
 }
 
 #bloc-8_all-pages {

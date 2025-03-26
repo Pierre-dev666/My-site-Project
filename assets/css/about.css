@@ -1,7 +1,7 @@
 #center-about {
 
     height: auto;
-    width: 1150px;
+    width: 60%;
     margin: auto;
     margin-top: -15px;
     background-color: rgba(255, 255, 255, 0);
@@ -9,10 +9,16 @@
 
 }
 
-#Logo-header{
-    width: 300px;
-    height: 150px;
-    margin: 50px 425px;
+#bloc-logo-header{
+    width: 26.1%;
+    height: 100%;
+    margin: 5% 37%;
+}
+
+#logo-header{
+    width: 100%;
+
+
 }
 
 #border-and-background {
@@ -26,7 +32,7 @@
 
 hr {
     border-color: aqua;
-    width: 1149px;
+    width: 100.1%;
     margin-left: -2px;
 }
 

@@ -1,4 +1,11 @@
+let connectionShape = localStorage.getItem("connection");
+    
+if (connectionShape == 1){
 
+    notConnected.style.display = "none";
+    connected.style.display = "grid";
+
+  }
 /* JEU */
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
