@@ -1,4 +1,4 @@
-let connectionShape = localStorage.getItem("connection");
+
     
 if (connectionShape == 1){
 
