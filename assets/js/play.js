@@ -1,11 +1,11 @@
 
-    
-if (connectionShape == 1){
 
-    notConnected.style.display = "none";
-    connected.style.display = "grid";
+if (connectionShape == 1) {
 
-  }
+  notConnected.style.display = "none";
+  connected.style.display = "grid";
+
+}
 /* JEU */
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
@@ -76,6 +76,7 @@ mainMenuPlay.addEventListener("click", (event) => {
   audioBlizzard.pause();
   audioBlizzard.currentTime = 0;
   audioBattle.play();
+  auto();
 
 });
 exit.addEventListener("click", (event) => {
@@ -89,38 +90,93 @@ exit.addEventListener("click", (event) => {
 });
 
 /* COMBAT */
-
-const warriorNormal = document.getElementById("warrior-normal");
-const warriorAttack = document.getElementById("warrior-attack");
-const warriorHealing = document.getElementById("warrior-healing");
-const attackButton = document.getElementById("button_battle_attack");
-const healingButton = document.getElementById("button_battle_healing-potion");
-
-attackButton.onclick = function () {
+const blocCharacter1 = document.getElementById("bloc-play_charact-1");
+const character1Normal = document.getElementById("normal_charact-1");
+const character1Attack = document.getElementById("attack_charact-1");
+const character1Capacity = document.getElementById("capacity_charact-1");
+const character2Normal = document.getElementById("normal_charact-2");
+const character2Attack = document.getElementById("attack_charact-2");
+const character2Capacity = document.getElementById("capacity_charact-2");
+const character3Normal = document.getElementById("normal_charact-3");
+const character3Attack = document.getElementById("attack_charact-3");
+const character3Capacity = document.getElementById("capacity_charact-3");
+const character4Normal = document.getElementById("normal_charact-4");
+const character4Attack = document.getElementById("attack_charact-4");
+const character4Capacity = document.getElementById("capacity_charact-4");
+const character5Normal = document.getElementById("normal_charact-5");
+const character5Attack = document.getElementById("attack_charact-5");
+const character5Capacity = document.getElementById("capacity_charact-5");
+const buttonCapacityCharact1 = document.getElementById("button_battle-capacity_charact-1");
+const buttonCapacityCharact2 = document.getElementById("button_battle-capacity_charact-2");
+let capacity1 = 0;
+/*do{
   let start = Date.now();
   let timer = setInterval(function () {
     let timePassed = Date.now() - start;
-    warriorAttack.style.display = "flex";
-    warriorNormal.style.display = "none";
+    character1Attack.style.display = "flex";
+    character1Normal.style.display = "none";
 
     if (timePassed > 200) {
-      warriorAttack.style.display = "none";
-      warriorNormal.style.display = "flex";
+      character1Attack.style.display = "none";
+      character1Normal.style.display = "flex";
+      clearInterval(timer);
+    }
+  }, 20);
+}
+while(capacity1 = 1);*/
+function auto() {
+
+  let start = Date.now();
+  let capacity1 = 0;
+  let timer = setInterval(function auto() {
+    let timePassed = Date.now() - start;
+    if(timePassed > 1000){
+      let timePassed2 = Date.now() - start;
+      if(timePassed2 > 2000) {
+      character1Attack.style.display = "flex";
+      character1Normal.style.display = "none";
+      console.log("attack");
+    }
+    if (timePassed2 > 2400) {
+      character1Attack.style.display = "none";
+      character1Normal.style.display = "flex";
+      console.log("retour normal");
+      capacity1 = 1;
+      clearInterval(timer);
+
+
+    }
+  }
+    
+  }, 20);
+}
+
+buttonCapacityCharact1.onclick = function () {
+  let start = Date.now();
+  let capacity1 = 1;
+  let timer = setInterval(function () {
+    let timePassed = Date.now() - start;
+    character1Attack.style.display = "flex";
+    character1Normal.style.display = "none";
+
+    if (timePassed > 200) {
+      character1Attack.style.display = "none";
+      character1Normal.style.display = "flex";
       clearInterval(timer);
     }
   }, 20);
 }
 
-healingButton.onclick = function () {
+buttonCapacityCharact2.onclick = function () {
   let start = Date.now();
   let timer = setInterval(function () {
     let timePassed = Date.now() - start;
-    warriorHealing.style.display = "flex";
-    warriorNormal.style.display = "none";
+    character1Capacity.style.display = "flex";
+    character1Normal.style.display = "none";
 
     if (timePassed > 500) {
-      warriorHealing.style.display = "none";
-      warriorNormal.style.display = "flex";
+      character1Capacity.style.display = "none";
+      character1Normal.style.display = "flex";
       clearInterval(timer);
     }
   }, 20);
