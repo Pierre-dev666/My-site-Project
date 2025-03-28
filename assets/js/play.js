@@ -49,7 +49,7 @@ buttonPageBaseJouer.onclick = function () {
     audioIntro.play();
     alternanceBase.style.display = "none";
     alternance.style.display = "grid";
-    if (timePassed > 20000) {
+    if (timePassed > 224500) {
       alternance.style.display = "none";
       alternance1.style.display = "grid";
       audioIntro.pause();
@@ -76,7 +76,7 @@ mainMenuPlay.addEventListener("click", (event) => {
   audioBlizzard.pause();
   audioBlizzard.currentTime = 0;
   audioBattle.play();
-  auto();
+  run();
 
 });
 exit.addEventListener("click", (event) => {
@@ -108,7 +108,7 @@ const character5Attack = document.getElementById("attack_charact-5");
 const character5Capacity = document.getElementById("capacity_charact-5");
 const buttonCapacityCharact1 = document.getElementById("button_battle-capacity_charact-1");
 const buttonCapacityCharact2 = document.getElementById("button_battle-capacity_charact-2");
-let capacity1 = 0;
+
 /*do{
   let start = Date.now();
   let timer = setInterval(function () {
@@ -124,60 +124,162 @@ let capacity1 = 0;
   }, 20);
 }
 while(capacity1 = 1);*/
-function auto() {
+function run() {
 
   let start = Date.now();
-  let capacity1 = 0;
-  let timer = setInterval(function auto() {
+
+  let timer0 = setInterval(function run() {
     let timePassed = Date.now() - start;
-    if(timePassed > 1000){
-      let timePassed2 = Date.now() - start;
-      if(timePassed2 > 2000) {
+    console.log("debut course");
+    if (timePassed > 2400) {
+      console.log("fin course");
+      autoEmplacement1();
+      autoEmplacement2();
+      clearInterval(timer0);
+
+
+    }
+
+
+  }, 20);
+}
+
+function autoEmplacement1() {
+
+  let start1 = Date.now();
+
+  let timer1 = setInterval(function autoEmplacement1() {
+    let timePassed1 = Date.now() - start1;
+    let attackslownessCharacter1 = 2000;
+    let attackSpeedCharacter1 = 1200;
+
+    if (timePassed1 > 1000) {
       character1Attack.style.display = "flex";
       character1Normal.style.display = "none";
-      console.log("attack");
+
     }
-    if (timePassed2 > 2400) {
+    if (timePassed1 > 2000) {
       character1Attack.style.display = "none";
       character1Normal.style.display = "flex";
-      console.log("retour normal");
-      capacity1 = 1;
-      clearInterval(timer);
+
+    }
+    if (timePassed1 > attackSpeedCharacter1 + attackslownessCharacter1) {
+
+      pauseEmplacement1()
+      clearInterval(timer1);
+
+    }
+    buttonCapacityCharact1.addEventListener("click", (event) => {
+      clearInterval(timer1);
+    });
+
+
+  }, 20);
+}
+function autoEmplacement2() {
+
+  let start2 = Date.now();
+
+  let timer2 = setInterval(function autoEmplacement2() {
+
+    let timePassed2 = Date.now() - start2;
+    let attackslownessCharacter2 = 1800;
+    let attackSpeedCharacter2 = 900;
+
+    if (timePassed2 > attackSpeedCharacter2) {
+      character2Attack.style.display = "flex";
+      character2Normal.style.display = "none";
+
+    }
+    if (timePassed2 > attackSpeedCharacter2 + attackslownessCharacter2) {
+      character2Attack.style.display = "none";
+      character2Normal.style.display = "flex";
+
+    }
+
+
+    if (timePassed2 > attackSpeedCharacter2 + attackslownessCharacter2) {
+
+      pauseEmplacement2()
+      clearInterval(timer2);
+
+    }
+
+    buttonCapacityCharact2.addEventListener("click", (event) => {
+      clearInterval(timer2);
+    });
+
+
+
+  }, 20);
+}
+function pauseEmplacement1() {
+
+  let start3 = Date.now();
+  let timer3 = setInterval(function pauseEmplacement1() {
+    let timePausePassed1 = Date.now() - start3;
+
+    if (timePausePassed1 > 1000) {
+      autoEmplacement1();
+      clearInterval(timer3);
 
 
     }
-  }
-    
+
+
+  }, 20);
+}
+function pauseEmplacement2() {
+
+  let start3 = Date.now();
+  let timer3 = setInterval(function pauseEmplacement2() {
+    let timePausePassed2 = Date.now() - start3;
+
+    if (timePausePassed2 > 1000) {
+      autoEmplacement2();
+      clearInterval(timer3);
+
+
+    }
+
+
   }, 20);
 }
 
-buttonCapacityCharact1.onclick = function () {
-  let start = Date.now();
-  let capacity1 = 1;
-  let timer = setInterval(function () {
-    let timePassed = Date.now() - start;
-    character1Attack.style.display = "flex";
+
+buttonCapacityCharact1.onclick = function capacityCharact1() {
+  let start6 = Date.now();
+
+  let timer6 = setInterval(function () {
+    let timePassed6 = Date.now() - start6;
+
     character1Normal.style.display = "none";
-
-    if (timePassed > 200) {
-      character1Attack.style.display = "none";
-      character1Normal.style.display = "flex";
-      clearInterval(timer);
-    }
-  }, 20);
-}
-
-buttonCapacityCharact2.onclick = function () {
-  let start = Date.now();
-  let timer = setInterval(function () {
-    let timePassed = Date.now() - start;
+    character1Attack.style.display = "none";
     character1Capacity.style.display = "flex";
-    character1Normal.style.display = "none";
 
-    if (timePassed > 500) {
+    if (timePassed6 > 200) {
       character1Capacity.style.display = "none";
       character1Normal.style.display = "flex";
-      clearInterval(timer);
+      clearInterval(timer6);
+      pauseEmplacement1();
+    }
+  }, 20);
+}
+
+buttonCapacityCharact2.onclick = function capacityCharact2() {
+
+  let start7 = Date.now();
+  let timer7 = setInterval(function () {
+    let timePassed7 = Date.now() - start7;
+    character2Normal.style.display = "none";
+    character2Attack.style.display = "none";
+    character2Capacity.style.display = "flex";
+
+    if (timePassed7 > 500) {
+      character2Capacity.style.display = "none";
+      character2Normal.style.display = "flex";
+      clearInterval(timer7);
+      pauseEmplacement2();
     }
   }, 20);
 }

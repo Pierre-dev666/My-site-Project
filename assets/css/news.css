@@ -11,7 +11,7 @@ h1 {
 #center-news {
 
     height: auto;
-    width: 1150px;
+    width: 60%;
     margin: auto;
     margin-top: -15px;
     background-color: rgba(255, 255, 255, 0);
@@ -34,7 +34,7 @@ h1 {
 
 hr {
     border-color: aqua;
-    width: 1149px;
+    width: 100.2%;
     margin-left: -2px;
 }
 
