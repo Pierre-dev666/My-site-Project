@@ -22,13 +22,13 @@
     z-index: 9;
 }
 
-#button_base-menu-play{
+#button_base-menu-play {
     font-size: xx-large;
     color: aqua;
     text-decoration: none;
 }
 
-#button_base-menu-play:hover{
+#button_base-menu-play:hover {
     color: white;
 }
 
@@ -63,7 +63,12 @@
     width: 1400px;
     object-fit: contain;
     z-index: -1;
-    }
+}
+
+#main-menu-background {
+    height: 100%;
+    width: 100%;
+}
 
 #bloc-1_menu {
     display: flex;
@@ -93,23 +98,23 @@
     margin-top: initial;
 }
 
-#button_main-menu-play{
+#button_main-menu-play {
     font-size: xx-large;
     color: aqua;
     text-decoration: none;
 }
 
-#button_main-menu-play:hover{
+#button_main-menu-play:hover {
     color: white;
 }
 
-#button_main-menu-settings{
+#button_main-menu-settings {
     font-size: x-large;
     color: aqua;
     text-decoration: none;
 }
 
-#button_main-menu-settings:hover{
+#button_main-menu-settings:hover {
     color: white;
 }
 
@@ -199,7 +204,7 @@
     visibility: visible;
 }
 
-li{
+li {
     font-family: 'lexend', Times, serif;
     cursor: pointer;
 }
@@ -219,12 +224,14 @@ li{
     display: flex;
     width: 107.5px;
     height: 300px;
-    grid-column: 5 / span 7;
+    grid-column: 4 / span 6;
     grid-row: 5 / span 7;
     justify-content: space-around;
     align-items: center;
+    margin: -35%;
     margin-top: initial;
-    margin-left: 0%;
+    margin-right: initial;
+    margin-bottom: initial;
     z-index: 3;
 }
 
@@ -232,12 +239,14 @@ li{
     display: flex;
     width: 107.5px;
     height: 300px;
-    grid-column: 5 / span 7;
+    grid-column: 4 / span 6;
     grid-row: 4 / span 6;
     justify-content: space-around;
     align-items: center;
+    margin: -32%;
     margin-top: initial;
-    margin-left: 2%;
+    margin-right: initial;
+    margin-bottom: initial;
     z-index: 2;
 }
 
@@ -245,12 +254,14 @@ li{
     display: flex;
     width: 107.5px;
     height: 300px;
-    grid-column: 5 / span 7;
+    grid-column: 4 / span 6;
     grid-row: 3 / span 5;
     justify-content: space-around;
     align-items: center;
+    margin: -29%;
     margin-top: initial;
-    margin-left: 3%;
+    margin-right: initial;
+    margin-bottom: initial;
     z-index: 1;
 }
 
@@ -258,11 +269,13 @@ li{
     display: flex;
     width: 107.5px;
     height: 300px;
-    grid-column: 3 / span 5;
+    grid-column: 2 / span 4;
     grid-row: 4 / span 6;
     justify-content: space-around;
-    align-items: center;
+    margin: -50%;
     margin-top: 8%;
+    margin-right: initial;
+    margin-bottom: initial;
     z-index: 2;
 }
 
@@ -270,12 +283,14 @@ li{
     display: flex;
     width: 107.5px;
     height: 300px;
-    grid-column: 3 / span 5;
+    grid-column: 2 / span 4;
     grid-row: 3 / span 5;
     justify-content: space-around;
     align-items: center;
+    margin: -46%;
     margin-top: 7%;
-    margin-left: 3%;
+    margin-right: initial;
+    margin-bottom: initial;
     z-index: 1;
 }
 
@@ -284,11 +299,13 @@ li{
     height: 90%;
     justify-self: center;
 }
+
 #attack_charact-1 {
     display: none;
     height: 90%;
     justify-self: center;
 }
+
 #capacity_charact-1 {
     display: none;
     height: 90%;
@@ -300,11 +317,13 @@ li{
     height: 90%;
     justify-self: center;
 }
+
 #attack_charact-2 {
     display: none;
     height: 90%;
     justify-self: center;
 }
+
 #capacity_charact-2 {
     display: none;
     height: 90%;
@@ -316,11 +335,13 @@ li{
     height: 90%;
     justify-self: center;
 }
+
 #attack_charact-3 {
     display: none;
     height: 90%;
     justify-self: center;
 }
+
 #capacity_charact-3 {
     display: none;
     height: 90%;
@@ -332,11 +353,13 @@ li{
     height: 90%;
     justify-self: center;
 }
+
 #attack_charact-4 {
     display: none;
     height: 90%;
     justify-self: center;
 }
+
 #capacity_charact-4 {
     display: none;
     height: 90%;
@@ -348,11 +371,13 @@ li{
     height: 90%;
     justify-self: center;
 }
+
 #attack_charact-5 {
     display: none;
     height: 90%;
     justify-self: center;
 }
+
 #capacity_charact-5 {
     display: none;
     height: 90%;
@@ -426,6 +451,7 @@ li{
     align-items: center;
     margin-top: initial;
 }
+
 #bloc-skill-5_play {
     display: flex;
     width: 107.5px;

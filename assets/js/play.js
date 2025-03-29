@@ -94,44 +94,58 @@ const blocCharacter1 = document.getElementById("bloc-play_charact-1");
 const character1Normal = document.getElementById("normal_charact-1");
 const character1Attack = document.getElementById("attack_charact-1");
 const character1Capacity = document.getElementById("capacity_charact-1");
+
+const blocCharacter2 = document.getElementById("bloc-play_charact-2");
 const character2Normal = document.getElementById("normal_charact-2");
 const character2Attack = document.getElementById("attack_charact-2");
 const character2Capacity = document.getElementById("capacity_charact-2");
+
+const blocCharacter3 = document.getElementById("bloc-play_charact-3");
 const character3Normal = document.getElementById("normal_charact-3");
 const character3Attack = document.getElementById("attack_charact-3");
 const character3Capacity = document.getElementById("capacity_charact-3");
+
+const blocCharacter4 = document.getElementById("bloc-play_charact-4");
 const character4Normal = document.getElementById("normal_charact-4");
 const character4Attack = document.getElementById("attack_charact-4");
 const character4Capacity = document.getElementById("capacity_charact-4");
+
+const blocCharacter5 = document.getElementById("bloc-play_charact-5");
 const character5Normal = document.getElementById("normal_charact-5");
 const character5Attack = document.getElementById("attack_charact-5");
 const character5Capacity = document.getElementById("capacity_charact-5");
+
 const buttonCapacityCharact1 = document.getElementById("button_battle-capacity_charact-1");
 const buttonCapacityCharact2 = document.getElementById("button_battle-capacity_charact-2");
 
-/*do{
-  let start = Date.now();
-  let timer = setInterval(function () {
-    let timePassed = Date.now() - start;
-    character1Attack.style.display = "flex";
-    character1Normal.style.display = "none";
 
-    if (timePassed > 200) {
-      character1Attack.style.display = "none";
-      character1Normal.style.display = "flex";
-      clearInterval(timer);
-    }
-  }, 20);
-}
-while(capacity1 = 1);*/
 function run() {
 
   let start = Date.now();
 
   let timer0 = setInterval(function run() {
     let timePassed = Date.now() - start;
+    let test0 = -35 + timePassed / 69;
+    let test1 = -32 + timePassed / 69;
+    let test2 = -29 + timePassed / 69;
+    let test3 = -50 + timePassed / 48.05;
+    let test4 = -46 + timePassed / 48.05;
+
+    blocCharacter1.style.marginLeft = test0  + "%";
+    blocCharacter2.style.marginLeft = test1  + "%";
+    blocCharacter3.style.marginLeft = test2  + "%";
+    blocCharacter4.style.marginLeft = test3  + "%";
+    blocCharacter5.style.marginLeft = test4  + "%";
     console.log("debut course");
+
+    console.log(test1);
     if (timePassed > 2400) {
+      blocCharacter1.style.marginLeft = "0%";
+      blocCharacter2.style.marginLeft = "3%";
+      blocCharacter3.style.marginLeft = "6%";
+      blocCharacter4.style.marginLeft = "0%";
+      blocCharacter5.style.marginLeft = "4%";
+
       console.log("fin course");
       autoEmplacement1();
       autoEmplacement2();
@@ -222,26 +236,26 @@ function pauseEmplacement1() {
     if (timePausePassed1 > 1000) {
       autoEmplacement1();
       clearInterval(timer3);
-
-
     }
-
+    buttonCapacityCharact1.addEventListener("click", (event) => {
+      clearInterval(timer3);
+    });
 
   }, 20);
 }
 function pauseEmplacement2() {
 
   let start3 = Date.now();
-  let timer3 = setInterval(function pauseEmplacement2() {
+  let timer4 = setInterval(function pauseEmplacement2() {
     let timePausePassed2 = Date.now() - start3;
 
     if (timePausePassed2 > 1000) {
       autoEmplacement2();
-      clearInterval(timer3);
-
-
+      clearInterval(timer4);
     }
-
+    buttonCapacityCharact2.addEventListener("click", (event) => {
+      clearInterval(timer4);
+    });
 
   }, 20);
 }
