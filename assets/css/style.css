@@ -11,6 +11,11 @@ header {
     margin-left: -8px;
 }
 
+#avatar {
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
+
 h2 {
     color: aqua;
 }
@@ -68,7 +73,6 @@ h2 {
 
 .link_1_2 {
     display: inline-block;
-    font-size: 17px;
     border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 
@@ -137,13 +141,15 @@ h2 {
 
 #game-project-studio_logo {
     bottom: 0px;
-    height: 70px;
-    width: 220px;
+    height: 65px;
+    width: 240px;
     padding-left: 8px;
     padding-right: 8px;
-    padding-bottom: 4px;
     padding-top: 1px;
     margin-top: 6px;
+    background-color: black;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 10px;
 }
 
 #game-project-studio_logo:hover {
@@ -367,7 +373,7 @@ h2 {
 }
 
 #bloc-9_all-pages {
-    display: flex;
+    display: none;
     width: 150px;
     height: 80px;
     grid-column: 12;

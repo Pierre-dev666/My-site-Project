@@ -131,11 +131,11 @@ function run() {
     let test3 = -50 + timePassed / 48.05;
     let test4 = -46 + timePassed / 48.05;
 
-    blocCharacter1.style.marginLeft = test0  + "%";
-    blocCharacter2.style.marginLeft = test1  + "%";
-    blocCharacter3.style.marginLeft = test2  + "%";
-    blocCharacter4.style.marginLeft = test3  + "%";
-    blocCharacter5.style.marginLeft = test4  + "%";
+    blocCharacter1.style.marginLeft = test0 + "%";
+    blocCharacter2.style.marginLeft = test1 + "%";
+    blocCharacter3.style.marginLeft = test2 + "%";
+    blocCharacter4.style.marginLeft = test3 + "%";
+    blocCharacter5.style.marginLeft = test4 + "%";
     console.log("debut course");
 
     console.log(test1);

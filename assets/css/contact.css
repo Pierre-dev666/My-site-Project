@@ -1,4 +1,4 @@
-#contact-form-center{
+#contact-form-center {
     height: auto;
     width: 800px;
     margin: auto;
@@ -7,6 +7,7 @@
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 50px;
 }
+
 main {
     margin-left: 200px;
     margin-right: 200px;
@@ -116,7 +117,7 @@ div input {
     text-align: center;
     margin-left: 260px;
     font-family: 'lexend', Times, serif;
-    color:black;
+    color: black;
 }
 
 #validate:hover {
@@ -142,7 +143,7 @@ div input {
     text-decoration: none;
     margin-left: 10px;
     font-family: 'lexend', Times, serif;
-    color:black;
+    color: black;
 }
 
 #erase:hover {

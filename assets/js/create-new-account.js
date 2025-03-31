@@ -10,12 +10,12 @@ createNewAccountButton.onclick = function () {
     let LogInadress = ("./log-in.html");
     if (identifiant.length >= 7 && pass.length >= 7 && identifiant !== pass) {
 
-            localStorage.setItem("myIdentifiant", identifiant);
-            localStorage.setItem("myPassword", pass);
-            console.log("ça marche")
-            formulaires.action = LogInadress;
-        }
-    
+        localStorage.setItem("myIdentifiant", identifiant);
+        localStorage.setItem("myPassword", pass);
+        console.log("ça marche")
+        formulaires.action = LogInadress;
+    }
+
     else {
         console.log("error")
         localStorage.clear();

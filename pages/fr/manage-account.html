@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos de nous - Game Project</title>
+    <title>Contact - Game Project</title>
     <meta name="description" content="La description de mon document">
     <link rel="icon" href="../../assets/img/gaming-site-project_logo.png" />
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/about.css">
+    <link rel="stylesheet" href="../../assets/css/manage-account.css">
 </head>
 
 <body>
+
 
     <header>
 
@@ -78,10 +79,10 @@
                         <p class="nav_text"><strong>Connecté</strong></p>
                     </a>
                     <div id="deconnexion">
-                        <div id="deconnexion-box">
-                            <span id="deco" class="language-decoration">Deconnexion</span>
+                        <span id="deconnexion-box">
+                            <a href="../fr/log-in.html" id="deco" class="language-decoration">Deconnexion</a>
 
-                        </div>
+                        </span>
                     </div>
                 </div>
                 <div id="bloc-9_all-pages"><a href="../../pages/fr/play.html"
@@ -92,29 +93,41 @@
 
     </header>
 
-    <main id="center-about">
-        <section id="bloc-logo-header">
-            <img src="../../assets/img/game-project-studio_logo.png" alt="Logo du jeu" id="logo-header">
+    <main id="manage-account_form-center">
+
+        <h1>Modifier le Profil</h1>
+
+
+        <section>
+
+            <legend>Informations personelles</legend>
+
+            <div type="text" placeholder="Votre prénom" class="manage-account_text">Identifiant :
+                <p id="actual-id"></p>
+            </div>
+
+
+            <legend>Photo de Profil</legend>
+
+            <div class="manage-account_text">Changer la photo de profil :</div>
+            <input type="file" class="bouton" id="browse" accept="image/png, image/jpeg" value="">
+            <label for="browse" id="input-file-trigger"></label>
+            <div>
+                <button class="bouton" id="to-change-profile-image">Changer</button>
+            </div>
+            <span id="profile-image-changing">
+                <img src="../../assets/img/log-in_icon.png" alt="Logo: Se connecter" id="next-profile-image">
+            </span>
+
+
         </section>
 
-
-        <section id="border-and-background">
-
-            <h1>Game project Studio</h1>
-            <hr>
-            <p>Qui sommes nous</p>
-            <p>Game project Studio a été fondé en 2025 dans le but de créer des jeux vidéo et des expériences qui
-                rendraient la
-                vie des joueurs plus agréable. Depuis, nous nous sommes développés pour passer à plus de 4 500 Rioters
-                dans plus de 20 bureaux dans le monde entier. Cela nous permet d'apporter une perspective globale aux
-                jeux que nous créons et aux personnages qui les habitent. Des rues de Piltover aux labos de radianite de
-                la Terre Alpha, nous nous efforçons de créer des jeux et de servir les joueurs qui les adorent.</p>
-        </section>
     </main>
 
     <footer>
 
     </footer>
+    <script src="../../assets/js/manage-account.js"></script>
     <script src="../../assets/js/main.js"></script>
 </body>
 
