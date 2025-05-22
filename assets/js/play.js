@@ -30,15 +30,43 @@ menuItems.forEach(
   }
 )
 
-const buttonPageBaseJouer = document.getElementById("button_base-menu-play")
+const menuFight = document.querySelector(".menu-fight");
+const menuItemsFight = document.querySelectorAll(".menuItemFight");
+const hamburgerFight = document.querySelector(".hamburger-fight");
+
+
+function toggleMenu2() {
+  if (menuFight.classList.contains("showMenu")) {
+    menuFight.classList.remove("showMenu");
+  }
+  else {
+    menuFight.classList.add("showMenu");
+    menuFight.classList.remove("hideMenu");
+  }
+}
+
+hamburgerFight.addEventListener("click", toggleMenu2);
+
+menuItemsFight.forEach(
+  function (menuItemFight) {
+    menuItemFight.addEventListener("click", toggleMenu2);
+  }
+)
+
+const buttonPageBaseJouer = document.getElementById("button_base-menu-play");
 const mainMenuPlay = document.getElementById("button_main-menu-play");
+const mainScreenPlay = document.getElementById("button_lets-fight");
 const mainMenuSettings = document.getElementById("button_main-menu-setting");
 const alternanceBase = document.getElementById("with-grid_play-base");
 const alternance = document.getElementById("with-grid_play-introducing-video");
 const alternance1 = document.getElementById("with-grid_play-menu");
-const alternance2 = document.getElementById("with-grid_play-battle");
+const alternance2 = document.getElementById("with-grid_play-main-screen-menu");
+const alternanceBattle = document.getElementById("with-grid_play-battle");
 const exit = document.getElementById("exit");
+const exitFight = document.getElementById("exit-fight");
+const exitGameInFight = document.getElementById("exit-game-in-fight");
 const audioIntro = document.getElementById("audio-intro");
+const audioMainMenu = document.getElementById("audio-main-menu");
 const audioBattle = document.getElementById("audio-battle");
 const audioBlizzard = document.getElementById("audio-blizzard");
 
@@ -54,7 +82,7 @@ buttonPageBaseJouer.onclick = function () {
       alternance1.style.display = "grid";
       audioIntro.pause();
       audioIntro.currentTime = 0;
-      audioBlizzard.play();
+      audioMainMenu.play();
       clearInterval(timer);
     }
     else alternance.addEventListener("click", (event) => {
@@ -63,7 +91,7 @@ buttonPageBaseJouer.onclick = function () {
       alternance1.style.display = "grid";
       audioIntro.pause();
       audioIntro.currentTime = 0;
-      audioBlizzard.play();
+      audioMainMenu.play();
       clearInterval(timer);
     });
   }, 20);
@@ -73,6 +101,15 @@ mainMenuPlay.addEventListener("click", (event) => {
 
   alternance1.style.display = "none";
   alternance2.style.display = "grid";
+  audioMainMenu.pause();
+  audioMainMenu.currentTime = 0;
+  audioBlizzard.play();
+
+});
+mainScreenPlay.addEventListener("click", (event) => {
+
+  alternance2.style.display = "none";
+  alternanceBattle.style.display = "grid";
   audioBlizzard.pause();
   audioBlizzard.currentTime = 0;
   audioBattle.play();
@@ -83,9 +120,28 @@ exit.addEventListener("click", (event) => {
 
   alternance1.style.display = "grid";
   alternance2.style.display = "none";
+  audioBlizzard.pause();
+  audioBlizzard.currentTime = 0;
+  audioMainMenu.play();
+
+});
+exitFight.addEventListener("click", (event) => {
+
+  alternance2.style.display = "grid";
+  alternanceBattle.style.display = "none";
   audioBattle.pause();
   audioBattle.currentTime = 0;
   audioBlizzard.play();
+
+});
+
+exitGameInFight.addEventListener("click", (event) => {
+
+  alternance1.style.display = "grid";
+  alternanceBattle.style.display = "none";
+  audioBattle.pause();
+  audioBattle.currentTime = 0;
+  audioMainMenu.play();
 
 });
 

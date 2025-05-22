@@ -118,6 +118,37 @@
     color: white;
 }
 
+#with-grid_play-main-screen-menu {
+    display: none;
+    position: fixed;
+    margin: 0px;
+    grid-template-columns: repeat(12, 107.5px);
+    grid-template-rows: repeat(8, 85px);
+    gap: 10px;
+    background-image: url("../img/mainscreenbackground-game.jpg");
+    background-size: 1400px 750px;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 2px;
+    z-index: 7;
+}
+#bloc_lets-fight {
+    display: flex;
+    width: 107.5px;
+    height: 85px;
+    grid-column: 12;
+    grid-row: 8;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: initial;
+}
+#button_lets-fight {
+    display: flex;
+    height: 55px;
+    width: 55px;
+    justify-self: center;
+}
+
 #with-grid_play-battle {
     display: none;
     position: fixed;
@@ -178,6 +209,53 @@
 }
 
 .menu {
+    margin-top: 30px;
+    position: fixed;
+    transform: translateY(-32%);
+    transition: transform 0.4s;
+    z-index: 99;
+    background: black;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    color: white;
+    list-style: none;
+    margin-top: 44px;
+    margin-left: 12px;
+    padding-top: 0.5rem;
+    width: 136px;
+    height: 140px;
+    padding-bottom: 1.5rem;
+    padding-left: 0px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.menuItemFight {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menuItemFight:hover {
+    text-decoration: underline;
+}
+
+.hamburger-fight {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    padding: 4px;
+    border: black solid 0px;
+    background: rgb(255 255 255 / 0%);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: -12px;
+    width: 148px;
+}
+
+.menu-fight {
     margin-top: 30px;
     position: fixed;
     transform: translateY(-32%);

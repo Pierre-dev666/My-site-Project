@@ -3,7 +3,7 @@ const notConnected = document.getElementById("not-connected");
 const connected = document.getElementById("connected");
 let connectedToPlay = document.getElementById("bloc-9_all-pages");
 let deconnectedButton = document.getElementById("deconnexion");
-let avatar = document.getElementById("avatar")
+let avatar = document.getElementById("avatar");
 let avatarSave = localStorage.getItem("avatarsource");
 avatar.src = avatarSave;
 

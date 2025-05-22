@@ -31,7 +31,6 @@ h1 {
 legend {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 25px;
     padding-top: 30px;
     font-size: x-large;
     font-family: 'lexend', Times, serif;
@@ -83,10 +82,19 @@ section {
     font-size: medium;
 }
 
-#actual-id{
+#actual-id {
     text-align: center;
     margin: 0px;
     margin-top: -20px;
     margin-left: -50px;
     color: white;
+}
+
+#modale_delete-account {
+    margin-top: 100px;
+}
+
+#validate-delete-account {
+    position: inherit;
+    right: 25px;
 }

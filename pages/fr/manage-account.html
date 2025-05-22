@@ -98,7 +98,7 @@
         <h1>Modifier le Profil</h1>
 
 
-        <section>
+        <section id="section_modify-account">
 
             <legend>Informations personelles</legend>
 
@@ -112,16 +112,27 @@
             <div class="manage-account_text">Changer la photo de profil :</div>
             <input type="file" class="bouton" id="browse" accept="image/png, image/jpeg" value="">
             <label for="browse" id="input-file-trigger"></label>
+
             <div>
                 <button class="bouton" id="to-change-profile-image">Changer</button>
             </div>
             <span id="profile-image-changing">
                 <img src="../../assets/img/log-in_icon.png" alt="Logo: Se connecter" id="next-profile-image">
             </span>
-
+            <div>
+                <button class="bouton" id="delete-account">Supprimer le compte</button>
+            </div>
 
         </section>
-
+        <dialog id="modale_delete-account">
+            <p>Êtes-vous sû de vouloir supprimer votre compte ?</p>
+            <button id="return-manage-account">
+                Non
+            </button>
+            <button id="validate-delete-account">
+                Oui, supprimer mon compte
+            </button>
+        </dialog>
     </main>
 
     <footer>
